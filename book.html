@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Now - Glow Spa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="spa-header">
+    <div class="spa-nav">
+      <img class="logo" src="images/Group 1.svg" alt="Glow Spa Logo">
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+  </header>
+
+  <section class="booking-hero">
+    <div class="booking-overlay"></div>
+    <div class="booking-content">
+      <h1>Book Your Spa Appointment</h1>
+      <p>Fill out the form below and we’ll get back to confirm your booking.</p>
+    </div>
+  </section>
+
+  <section class="booking-form-section">
+    <div class="booking-form-container">
+      <h2>Book Now</h2>
+      <form id="bookingForm" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+        <label for="service">Select Service</label>
+        <select id="service" name="service" required>
+          <option value="">-- Choose a Service --</option>
+          <option value="facial">Facial</option>
+          <option value="massage">Massage</option>
+          <option value="lash">Lash Extensions</option>
+          <option value="nails">Manicure & Pedicure</option>
+          <option value="barb">Barbing</option>
+          <option value="makeup">MakeUp</option>
+          <option value="wig">Wig Installation</option>
+          <option value="plating">Braiding</option>
+        </select>
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="message">Additional Notes</label>
+        <textarea id="message" name="message" rows="4" placeholder="Any special requests"></textarea>
+
+        <button type="submit" class="booking-btn">Submit Booking</button>
+      </form>
+      <div id="bookingMessage" class="booking-message"></div>
+    </div>
+  </section>
+
+  <footer class="booking-footer">
+    <p>© 2026 Glow Spa. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
